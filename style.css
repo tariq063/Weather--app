@@ -1,0 +1,218 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'poppins', sans-serif;
+}
+
+.w-title h2 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 30px;
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr;
+  grid-template-rows: 27px 0;
+  grid-gap: 20px;
+  align-items: center;
+}
+
+.w-title h2:after,
+.w-title h2:before {
+  content: " ";
+  display: block;
+  border-bottom: 1px solid #c50000;
+  border-top: 1px solid #c50000;
+  height: 5px;
+  background-color: #f8f8f8;
+}
+
+.card {
+  width: 90%;
+  max-width: 470px;
+  background: linear-gradient(135deg, #00feba, #5b548a);
+  color: #fff;
+  margin: 50px auto;
+  border-radius: 20px;
+  padding: 40px 35px;
+  text-align: center;
+}
+
+.search {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.search input {
+  border: 0;
+  outline: 0;
+  background: #ebfffc;
+  padding: 10px 15px;
+  height: 60px;
+  border-radius: 30px;
+  flex: 1;
+  margin-right: 16px;
+  font-size: 18px;
+  color: #222;
+}
+
+.search button {
+  border: 0;
+  outline: 0;
+  background: #ebfffc;
+  color: #222;
+  width: 60px;
+  border-radius: 50%;
+  height: 60px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.weather-icon i {
+  width: 170px;
+  margin-top: 30px;
+  font-size: 50px;
+}
+
+.weather h1 {
+  font-size: 70px;
+  font-weight: 500;
+}
+
+.weather h2 {
+  font-size: 40px;
+  font-weight: 400;
+  margin-top: -10px;
+}
+
+.details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  margin-top: 50px;
+}
+
+.col {
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+
+.col i {
+  width: 40px;
+  margin-right: 10px;
+  font-size: 35px;
+}
+
+.humidity,
+.wind {
+  font-size: 28px;
+  margin-top: -6px;
+}
+
+/* footer  */
+
+.footer .container {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center; /* Centers the content inside the container */
+}
+
+.social-media {
+  margin-top: 10px;
+}
+
+.social-media a {
+  justify-items: center;
+  border: 1px solid white;
+  padding: 5px 10px;
+  border-radius: 20px;
+  margin: 10px 20px;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.social-media a:hover {
+  color: #ddd;
+}
+footer p{
+  margin-top: 10px;
+}
+
+/* General styles for light mode */
+body {
+  background-color: #fff;
+  color: #000;
+}
+
+h1, h2, h3 {
+  color: #000; /* Ensure headings are visible in light mode */
+}
+
+.social-media a {
+  color: #000; /* Ensure icons are visible in light mode */
+}
+
+/* Dark mode styles */
+body.dark-mode {
+  background-color: #333;
+  color: #fff;
+}
+
+body.dark-mode h1, 
+body.dark-mode h2, 
+body.dark-mode h3 {
+  color: #fff; /* Ensure headings are visible in dark mode */
+}
+
+body.dark-mode .social-media a {
+  color: #fff; /* Ensure icons are visible in dark mode */
+}
+
+/* Theme switcher styles */
+.theme-switcher {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 1000; /* Ensures the switch is above other content */
+}
+
+.switch {
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+  background-color: #ccc;
+  border-radius: 20px;
+  cursor: pointer;
+  position: relative;
+}
+
+.switch::before {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 16px;
+  height: 16px;
+  background-color: #fff;
+  border-radius: 50%;
+  transition: transform 0.3s;
+}
+
+#theme-toggle:checked + .switch {
+  background-color: #333;
+}
+
+#theme-toggle:checked + .switch::before {
+  transform: translateX(20px);
+}
+
+
+footer p {
+  padding-bottom: 30px;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Weather Checker </title>
+  <!-- font awesome  -->
+  <script src="https://kit.fontawesome.com/eb3c9c8654.js" crossorigin="anonymous"></script>
+  <!-- css link  -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="theme-switcher">
+    <input type="checkbox" id="theme-toggle">
+    <label for="theme-toggle" class="switch"></label>
+  </div>
+
+  <div class="w-title">
+    <h2> Current Weather </h2>
+  </div>
+
+  <div class="card">
+    <div class="search">
+      <input type="text" placeholder="enter city name" spellcheck="false">
+      <button> <i class="fa-solid fa-magnifying-glass"></i> </button>
+    </div>
+    <div class="weather">
+      <span class="weather-icon"> <i class="fas fa-cloud-sun-rain"></i> </span>
+      <h1 class="temp"> 22°c</h1>
+      <h2 class="city"> Pabna </h2>
+
+      <div class="details">
+        <!-- Humidity  -->
+        <div class="col">
+          <i class="fas fa-water"></i>
+          <div>
+            <p class="humidity"> 50% </p>
+            <p> Humidity </p>
+          </div>
+        </div>
+        <!-- wind  -->
+        <div class="col">
+          <i class="fas fa-wind"></i>
+          <div>
+            <p class="wind"> 15 km/h </p>
+            <p> Wind Speed </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="social-media">
+        <a href="https://facebook.com/tariq433" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      </div>
+      <p>&copy; 2024 Tariq. All rights reserved.</p>
+    </div>
+  </footer>
+
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
